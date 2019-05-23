@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name wearable_cape-rescue)(type Legacy)(uri ${KIPRJMOD}/wearable_cape-rescue.lib)(options "")(descr ""))
+  (lib (name wearable_cape)(type Legacy)(uri ${KIPRJMOD}/wearable_cape.lib)(options "")(descr ""))
+  (lib (name beagleboneblack)(type Legacy)(uri ${KIPRJMOD}/kicadlibs/beagleboneblack.lib)(options "")(descr ""))
+  (lib (name beaglebone)(type Legacy)(uri ${KIPRJMOD}/kicadlibs/beaglebone.lib)(options "")(descr ""))
+  (lib (name jack_3p)(type Legacy)(uri ${KIPRJMOD}/kicadlibs/jack_3p.lib)(options "")(descr ""))
+)
