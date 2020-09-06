@@ -9,8 +9,23 @@ Second version of a wearable sensing/actuating cape for the Augmented Attention 
 - breakout header for analog inputs
 - widen power rail traces from battery to 11.1V source to amplifiers
 
+# 23 MAY 2019 ~ WARNING! First Boards Ordered from Eurocircuits have wiring mistakes!
 
-## ToDos
+_IMPORTANT_
+There was a wiring error in these boards, where the 10-pin analog inputs
+and analog outputs headers on the capelet do not match the pins of the Bela.
+
+The pin ordering is flipped. On the Bela A-INS ground is at the bottom,
+on the wearable capelet it's at the top.
+
+On the Bela A-OUTS ground is on the right, on the capelet it's on the
+left.
+
+Temporary Solution: make a little pin header wire connector with the wiring reversed
+
+
+
+## ToDos (future work)
 - Add bypass capacitors to the active filters
 - silkscreen labels for switch functionality and outputs
 - breakout capability of mode switch, reset switch, & status LEDs

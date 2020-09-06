@@ -1,61 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Device_C
-#
-DEF Device_C C 0 10 N Y 1 F N
-F0 "C" 25 100 50 H V L CNN
-F1 "Device_C" 25 -100 50 H V L CNN
-F2 "" 38 -150 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- C_*
-$ENDFPLIST
-DRAW
-P 2 0 1 20 -80 -30 80 -30 N
-P 2 0 1 20 -80 30 80 30 N
-X ~ 1 0 150 110 D 50 50 1 1 P
-X ~ 2 0 -150 110 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_CP1
-#
-DEF Device_CP1 C 0 10 N N 1 F N
-F0 "C" 25 100 50 H V L CNN
-F1 "Device_CP1" 25 -100 50 H V L CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- CP_*
-$ENDFPLIST
-DRAW
-A 0 -150 128 1287 513 0 1 20 N -80 -50 80 -50
-P 2 0 1 20 -80 30 80 30 N
-P 2 0 1 0 -70 90 -30 90 N
-P 2 0 1 0 -50 70 -50 110 N
-X ~ 1 0 150 110 D 50 50 1 1 P
-X ~ 2 0 -150 130 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_R
-#
-DEF Device_R R 0 0 N Y 1 F N
-F0 "R" 80 0 50 V V C CNN
-F1 "Device_R" 0 0 50 V V C CNN
-F2 "" -70 0 50 V I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- R_*
-$ENDFPLIST
-DRAW
-S -40 -100 40 100 0 1 10 N
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # beagleboneblack_BEAGLEBONEBLACK
 #
 DEF beagleboneblack_BEAGLEBONEBLACK U 0 1 Y Y 4 F N
@@ -184,11 +129,47 @@ X R 3 450 0 300 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# jcr-conn_CONN_01X02_BATTERY
+# wearable_cape-rescue_C-Device
 #
-DEF jcr-conn_CONN_01X02_BATTERY P 0 67 Y Y 1 F N
+DEF wearable_cape-rescue_C-Device C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "wearable_cape-rescue_C-Device" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# wearable_cape-rescue_C-jcr-device
+#
+DEF wearable_cape-rescue_C-jcr-device C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "wearable_cape-rescue_C-jcr-device" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# wearable_cape-rescue_CONN_01X02_BATTERY-jcr-conn
+#
+DEF wearable_cape-rescue_CONN_01X02_BATTERY-jcr-conn P 0 67 Y Y 1 F N
 F0 "P" 25 150 50 H V C CNN
-F1 "jcr-conn_CONN_01X02_BATTERY" 200 0 50 V V C CNN
+F1 "wearable_cape-rescue_CONN_01X02_BATTERY-jcr-conn" 200 0 50 V V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -206,94 +187,6 @@ X +V 2 -200 -50 150 R 50 28 1 1 w
 ENDDRAW
 ENDDEF
 #
-# jcr-device_C
-#
-DEF jcr-device_C C 0 10 N Y 1 F N
-F0 "C" 25 100 50 H V L CNN
-F1 "jcr-device_C" 25 -100 50 H V L CNN
-F2 "" 38 -150 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- C_*
-$ENDFPLIST
-DRAW
-P 2 0 1 20 -80 -30 80 -30 N
-P 2 0 1 20 -80 30 80 30 N
-X ~ 1 0 150 110 D 50 50 1 1 P
-X ~ 2 0 -150 110 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# jcr-device_C_Ceramic
-#
-DEF jcr-device_C_Ceramic C 0 10 N Y 1 F N
-F0 "C" 100 50 50 H V L CNN
-F1 "jcr-device_C_Ceramic" 100 -50 50 H V L CNN
-F2 "" 0 25 60 H V C CNN
-F3 "" 0 25 60 H V C CNN
-DRAW
-P 3 0 1 20 -50 25 50 25 50 25 N
-P 3 0 1 20 50 -25 -50 -25 -50 -25 N
-X ~ 1 0 100 80 D 40 40 1 1 P
-X ~ 2 0 -100 80 U 40 40 1 1 P
-ENDDRAW
-ENDDEF
-#
-# jcr-ic_MAX6100
-#
-DEF jcr-ic_MAX6100 U 0 40 Y Y 1 F N
-F0 "U" 200 300 60 H V C CNN
-F1 "jcr-ic_MAX6100" 300 -300 60 H V C CNN
-F2 "" 0 0 60 H I C CNN
-F3 "" 0 0 60 H I C CNN
-DRAW
-S -200 200 200 -200 0 1 0 N
-X IN 1 0 300 100 D 50 50 1 1 W
-X OUT 2 300 0 100 L 50 50 1 1 w
-X GND 3 0 -300 100 U 50 50 1 1 w
-ENDDRAW
-ENDDEF
-#
-# power_GND
-#
-DEF power_GND #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GND" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_GNDA
-#
-DEF power_GNDA #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GNDA" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GNDA 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_GNDD
-#
-DEF power_GNDD #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GNDD" 0 -125 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-S -50 -60 50 -80 0 1 10 F
-P 2 0 1 0 0 0 0 -60 N
-X GNDD 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
 # wearable_cape-rescue_CONN_1-conn
 #
 DEF wearable_cape-rescue_CONN_1-conn P 0 30 N N 1 F N
@@ -305,6 +198,41 @@ DRAW
 C 0 0 31 0 1 0 N
 P 2 0 1 0 -30 0 -50 0 N
 X 1 1 -150 0 100 R 60 60 1 1 P
+ENDDRAW
+ENDDEF
+#
+# wearable_cape-rescue_CP1-Device
+#
+DEF wearable_cape-rescue_CP1-Device C 0 10 N N 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "wearable_cape-rescue_CP1-Device" 25 -100 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ CP_*
+$ENDFPLIST
+DRAW
+A 0 -150 128 1287 513 0 1 20 N -80 -50 80 -50
+P 2 0 1 20 -80 30 80 30 N
+P 2 0 1 0 -70 90 -30 90 N
+P 2 0 1 0 -50 70 -50 110 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 130 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# wearable_cape-rescue_C_Ceramic-jcr-device
+#
+DEF wearable_cape-rescue_C_Ceramic-jcr-device C 0 10 N Y 1 F N
+F0 "C" 100 50 50 H V L CNN
+F1 "wearable_cape-rescue_C_Ceramic-jcr-device" 100 -50 50 H V L CNN
+F2 "" 0 25 60 H V C CNN
+F3 "" 0 25 60 H V C CNN
+DRAW
+P 3 0 1 20 -50 25 50 25 50 25 N
+P 3 0 1 20 50 -25 -50 -25 -50 -25 N
+X ~ 1 0 100 80 D 40 40 1 1 P
+X ~ 2 0 -100 80 U 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -324,6 +252,105 @@ A 150 0 50 1 1799 0 1 0 N 200 0 100 0
 S -225 75 225 -50 0 1 0 N
 X 1 1 -350 0 150 R 40 40 1 1 P
 X 2 2 350 0 150 L 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# wearable_cape-rescue_GND-power
+#
+DEF wearable_cape-rescue_GND-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "wearable_cape-rescue_GND-power" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# wearable_cape-rescue_GNDA-power
+#
+DEF wearable_cape-rescue_GNDA-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "wearable_cape-rescue_GNDA-power" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GNDA 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# wearable_cape-rescue_GNDD-power
+#
+DEF wearable_cape-rescue_GNDD-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "wearable_cape-rescue_GNDD-power" 0 -125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -50 -60 50 -80 0 1 10 F
+P 2 0 1 0 0 0 0 -60 N
+X GNDD 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# wearable_cape-rescue_MAX6100-jcr-ic
+#
+DEF wearable_cape-rescue_MAX6100-jcr-ic U 0 40 Y Y 1 F N
+F0 "U" 200 300 60 H V C CNN
+F1 "wearable_cape-rescue_MAX6100-jcr-ic" 300 -300 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -200 200 200 -200 0 1 0 N
+X IN 1 0 300 100 D 50 50 1 1 W
+X OUT 2 300 0 100 L 50 50 1 1 w
+X GND 3 0 -300 100 U 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# wearable_cape-rescue_R-Device
+#
+DEF wearable_cape-rescue_R-Device R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "wearable_cape-rescue_R-Device" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# wearable_cape-rescue_SolderJumper_3_Open-jcr-device
+#
+DEF wearable_cape-rescue_SolderJumper_3_Open-jcr-device JP 0 0 Y N 1 F N
+F0 "JP" -100 -100 50 H V C CNN
+F1 "wearable_cape-rescue_SolderJumper_3_Open-jcr-device" 0 110 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SolderJumper*Open*
+$ENDFPLIST
+DRAW
+A -40 0 40 901 -901 0 1 0 N -40 40 -40 -40
+A -40 0 40 901 -901 0 1 0 F -40 40 -40 -40
+A 40 0 40 -899 899 0 1 0 N 40 -40 40 40
+A 40 0 40 -899 899 0 1 0 F 40 -40 40 40
+S -20 40 20 -40 0 1 0 F
+P 2 0 1 0 -100 0 -80 0 N
+P 2 0 1 0 -40 40 -40 -40 N
+P 2 0 1 0 0 -50 0 -40 N
+P 2 0 1 0 40 40 40 -40 N
+P 2 0 1 0 100 0 80 0 N
+X A 1 -200 0 100 R 50 50 1 1 P
+X C 2 0 -150 100 U 50 50 1 1 I
+X B 3 200 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -448,6 +475,39 @@ X P1 1 -200 150 150 R 50 50 1 1 P
 X P2 2 -200 50 150 R 50 50 1 1 P
 X P3 3 -200 -50 150 R 50 50 1 1 P
 X P4 4 -200 -150 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# wearable_cape_CONN_01x08_UNI
+#
+DEF wearable_cape_CONN_01x08_UNI J 0 40 Y N 1 F N
+F0 "J" 0 400 50 H V C CNN
+F1 "wearable_cape_CONN_01x08_UNI" 0 -500 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -125 -25 -350 0 1 0 N
+S -50 250 -25 25 0 1 0 N
+S -50 350 50 -450 1 1 10 f
+S 0 -395 50 -405 1 1 6 N
+S 0 -295 50 -305 1 1 6 N
+S 0 -195 50 -205 1 1 6 N
+S 0 -95 50 -105 1 1 6 N
+S 0 5 50 -5 1 1 6 N
+S 0 105 50 95 1 1 6 N
+S 0 205 50 195 1 1 6 N
+S 0 305 50 295 1 1 6 N
+X Pin_1 1 200 300 150 L 50 50 1 1 P
+X Pin_2 2 200 200 150 L 50 50 1 1 P
+X Pin_3 3 200 100 150 L 50 50 1 1 P
+X Pin_4 4 200 0 150 L 50 50 1 1 P
+X Pin_5 5 200 -100 150 L 50 50 1 1 P
+X Pin_6 6 200 -200 150 L 50 50 1 1 P
+X Pin_7 7 200 -300 150 L 50 50 1 1 P
+X Pin_8 8 200 -400 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #

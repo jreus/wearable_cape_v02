@@ -35,6 +35,12 @@ D Connector, single row, 01x10
 K connector
 $ENDCMP
 #
+$CMP CONN_01x08_UNI
+D Generic unidirectional connector, single row, 01x08, molex
+K connector molex unidirectional
+F ~
+$ENDCMP
+#
 $CMP CONN_02X04_UNI
 D 2x4 header with uni-directional plug
 K header, connector, uni-directional, plug
