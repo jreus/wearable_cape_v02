@@ -24,7 +24,7 @@ F 3 "" H 7525 4425 50  0000 C CNN
 	2    7475 4225
 	1    0    0    -1  
 $EndComp
-Text GLabel 10425 10375 2    60   Output ~ 0
+Text GLabel 9525 10275 2    60   Output ~ 0
 REF_1.8V
 $Comp
 L wearable_cape-rescue:C-Device C2
@@ -87,7 +87,7 @@ Text Label 9100 4225 0    60   ~ 0
 FILT_OUT1
 Text Label 5900 4125 2    60   ~ 0
 BELA_OUT3
-Text Notes 10000 10000 0    60   ~ 0
+Text Notes 9100 9900 0    60   ~ 0
 1.8V reference
 $Comp
 L wearable_cape:BELA_AOUTS P4
@@ -325,23 +325,23 @@ BELA_OUT3
 $Comp
 L wearable_cape-rescue:R-Device R1
 U 1 1 57E38FD8
-P 14300 7725
-F 0 "R1" V 14380 7725 50  0000 C CNN
-F 1 "100" V 14300 7725 50  0000 C CNN
-F 2 "jcr-device:R_0603_SMD_Handsolder" V 14230 7725 50  0001 C CNN
-F 3 "" H 14300 7725 50  0000 C CNN
-	1    14300 7725
+P 15500 7575
+F 0 "R1" V 15580 7575 50  0000 C CNN
+F 1 "100" V 15500 7575 50  0000 C CNN
+F 2 "jcr-device:R_0603_SMD_Handsolder" V 15430 7575 50  0001 C CNN
+F 3 "" H 15500 7575 50  0000 C CNN
+	1    15500 7575
 	0    1    1    0   
 $EndComp
 $Comp
 L wearable_cape:SW_PUSH SW1
 U 1 1 57E3906C
-P 14000 8025
-F 0 "SW1" H 14150 8135 50  0000 C CNN
-F 1 "SW_HALT" H 14000 7945 50  0000 C CNN
-F 2 "jcr-mechanical:SW_SPST_EVQPE1" H 14000 8025 50  0001 C CNN
-F 3 "" H 14000 8025 50  0000 C CNN
-	1    14000 8025
+P 15200 7875
+F 0 "SW1" H 15350 7985 50  0000 C CNN
+F 1 "SW_HALT" H 15200 7795 50  0000 C CNN
+F 2 "jcr-mechanical:SW_SPST_EVQPE1" H 15200 7875 50  0001 C CNN
+F 3 "" H 15200 7875 50  0000 C CNN
+	1    15200 7875
 	0    -1   -1   0   
 $EndComp
 Text Label 2850 1200 2    60   ~ 0
@@ -657,7 +657,7 @@ Wire Wire Line
 Wire Wire Line
 	7475 7050 7475 7250
 Wire Wire Line
-	14000 7725 14150 7725
+	15200 7575 15350 7575
 Wire Wire Line
 	13625 4400 13925 4400
 Wire Wire Line
@@ -734,29 +734,29 @@ Wire Wire Line
 	2800 5175 2800 5950
 Connection ~ 975  5900
 Wire Wire Line
-	8750 9775 8750 9875
+	7850 9675 7850 9775
 $Comp
 L wearable_cape:MCP6004 U2
 U 3 1 57F52C27
-P 9875 10375
-F 0 "U2" H 9875 10575 50  0000 L CNN
-F 1 "MCP6004" H 9875 10175 50  0000 L CNN
-F 2 "jcr-ic:SOIC-14_3.9x8.7mm_P1.27mm" H 9825 10475 50  0001 C CNN
-F 3 "" H 9925 10575 50  0000 C CNN
-	3    9875 10375
+P 8975 10275
+F 0 "U2" H 8975 10475 50  0000 L CNN
+F 1 "MCP6004" H 8975 10075 50  0000 L CNN
+F 2 "jcr-ic:SOIC-14_3.9x8.7mm_P1.27mm" H 8925 10375 50  0001 C CNN
+F 3 "" H 9025 10475 50  0000 C CNN
+	3    8975 10275
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10175 10375 10275 10375
+	9275 10275 9375 10275
 Wire Wire Line
-	10275 10375 10275 10775
+	9375 10275 9375 10675
 Wire Wire Line
-	10275 10775 9525 10775
+	9375 10675 8625 10675
 Wire Wire Line
-	9525 10775 9525 10475
+	8625 10675 8625 10375
 Wire Wire Line
-	9525 10475 9575 10475
-Connection ~ 10275 10375
+	8625 10375 8675 10375
+Connection ~ 9375 10275
 Text Label 1175 8850 2    60   ~ 0
 D0
 Text Label 2875 8850 0    60   ~ 0
@@ -795,43 +795,43 @@ Text Label 1075 7000 2    60   ~ 0
 ~HALT
 Wire Wire Line
 	1075 7000 1225 7000
-Text Label 14600 7725 0    60   ~ 0
+Text Label 15800 7575 0    60   ~ 0
 ~HALT
 Wire Wire Line
-	14600 7725 14450 7725
+	15800 7575 15650 7575
 $Comp
 L wearable_cape:SW_PUSH SW2
 U 1 1 57F5BC4F
-P 14600 8850
-F 0 "SW2" H 14750 8960 50  0000 C CNN
-F 1 "SW_MODE_SEL" H 14600 8770 50  0000 C CNN
-F 2 "jcr-mechanical:SW_SPST_EVQPE1" H 14600 8850 50  0001 C CNN
-F 3 "" H 14600 8850 50  0000 C CNN
-	1    14600 8850
+P 14750 8850
+F 0 "SW2" H 14900 8960 50  0000 C CNN
+F 1 "SW_MODE_SEL" H 14750 8770 50  0000 C CNN
+F 2 "jcr-mechanical:SW_SPST_EVQPE1" H 14750 8850 50  0001 C CNN
+F 3 "" H 14750 8850 50  0000 C CNN
+	1    14750 8850
 	1    0    0    -1  
 $EndComp
 $Comp
 L wearable_cape-rescue:R-Device R12
 U 1 1 57F5BE04
-P 15275 9150
-F 0 "R12" V 15355 9150 50  0000 C CNN
-F 1 "10k" V 15275 9150 50  0000 C CNN
-F 2 "jcr-device:R_0603_SMD_Handsolder" V 15205 9150 50  0001 C CNN
-F 3 "" H 15275 9150 50  0000 C CNN
-	1    15275 9150
+P 15425 9150
+F 0 "R12" V 15505 9150 50  0000 C CNN
+F 1 "10k" V 15425 9150 50  0000 C CNN
+F 2 "jcr-device:R_0603_SMD_Handsolder" V 15355 9150 50  0001 C CNN
+F 3 "" H 15425 9150 50  0000 C CNN
+	1    15425 9150
 	1    0    0    -1  
 $EndComp
-Text Label 15475 8850 0    60   ~ 0
+Text Label 15625 8850 0    60   ~ 0
 D0
 Wire Wire Line
-	15275 9000 15275 8850
-Connection ~ 15275 8850
+	15425 9000 15425 8850
+Connection ~ 15425 8850
 Wire Wire Line
-	15275 9300 15275 9450
-Text GLabel 14100 8850 0    60   Input ~ 0
+	15425 9300 15425 9450
+Text GLabel 14250 8850 0    60   Input ~ 0
 SYS_3.3V
 Wire Wire Line
-	14100 8850 14200 8850
+	14250 8850 14350 8850
 Text Label 3125 4225 0    60   ~ 0
 BELA_OUT6
 Text Label 3125 4125 0    60   ~ 0
@@ -891,7 +891,7 @@ Wire Wire Line
 Wire Wire Line
 	1375 4625 1475 4625
 Wire Wire Line
-	9775 9725 9775 10075
+	8875 9625 8875 9975
 Wire Wire Line
 	3125 4525 2875 4525
 Wire Wire Line
@@ -899,7 +899,7 @@ Wire Wire Line
 Wire Wire Line
 	875  5900 975  5900
 Wire Wire Line
-	9775 10675 9775 10825
+	8875 10575 8875 10725
 $Comp
 L beagleboneblack:BEAGLEBONEBLACK U3
 U 2 1 5808023E
@@ -1067,23 +1067,23 @@ Connection ~ 13225 3575
 $Comp
 L wearable_cape-rescue:GNDD-power #PWR032
 U 1 1 5807F1A3
-P 15275 9450
-F 0 "#PWR032" H 15275 9200 50  0001 C CNN
-F 1 "GNDD" H 15275 9300 50  0000 C CNN
-F 2 "" H 15275 9450 50  0000 C CNN
-F 3 "" H 15275 9450 50  0000 C CNN
-	1    15275 9450
+P 15425 9450
+F 0 "#PWR032" H 15425 9200 50  0001 C CNN
+F 1 "GNDD" H 15425 9300 50  0000 C CNN
+F 2 "" H 15425 9450 50  0000 C CNN
+F 3 "" H 15425 9450 50  0000 C CNN
+	1    15425 9450
 	1    0    0    -1  
 $EndComp
 $Comp
 L wearable_cape-rescue:GNDD-power #PWR034
 U 1 1 5807F3FD
-P 14000 8325
-F 0 "#PWR034" H 14000 8075 50  0001 C CNN
-F 1 "GNDD" H 14000 8175 50  0000 C CNN
-F 2 "" H 14000 8325 50  0000 C CNN
-F 3 "" H 14000 8325 50  0000 C CNN
-	1    14000 8325
+P 15200 8175
+F 0 "#PWR034" H 15200 7925 50  0001 C CNN
+F 1 "GNDD" H 15200 8025 50  0000 C CNN
+F 2 "" H 15200 8175 50  0000 C CNN
+F 3 "" H 15200 8175 50  0000 C CNN
+	1    15200 8175
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1388,15 +1388,15 @@ $EndComp
 $Comp
 L wearable_cape-rescue:GND-power #PWR036
 U 1 1 580918B1
-P 9775 10825
-F 0 "#PWR036" H 9775 10575 50  0001 C CNN
-F 1 "GND" H 9775 10675 50  0000 C CNN
-F 2 "" H 9775 10825 50  0000 C CNN
-F 3 "" H 9775 10825 50  0000 C CNN
-	1    9775 10825
+P 8875 10725
+F 0 "#PWR036" H 8875 10475 50  0001 C CNN
+F 1 "GND" H 8875 10575 50  0000 C CNN
+F 2 "" H 8875 10725 50  0000 C CNN
+F 3 "" H 8875 10725 50  0000 C CNN
+	1    8875 10725
 	1    0    0    -1  
 $EndComp
-Text GLabel 9775 9725 1    60   Input ~ 0
+Text GLabel 8875 9625 1    60   Input ~ 0
 SYS_5V
 Text GLabel 7475 5825 1    60   Input ~ 0
 SYS_5V
@@ -1438,7 +1438,7 @@ Text GLabel 7000 2475 3    60   Output ~ 0
 REF_1.8V
 Wire Wire Line
 	7000 2275 7000 2475
-Text GLabel 8750 9775 1    60   Input ~ 0
+Text GLabel 7850 9675 1    60   Input ~ 0
 SYS_5V
 Wire Wire Line
 	5300 8550 5500 8550
@@ -1583,9 +1583,9 @@ Wire Wire Line
 Wire Wire Line
 	975  5900 1225 5900
 Wire Wire Line
-	10275 10375 10425 10375
+	9375 10275 9525 10275
 Wire Wire Line
-	15275 8850 15475 8850
+	15425 8850 15625 8850
 Wire Wire Line
 	7450 1000 7450 1675
 Wire Wire Line
@@ -1641,59 +1641,59 @@ Wire Wire Line
 $Comp
 L wearable_cape-rescue:MAX6100-jcr-ic U5
 U 1 1 5CE7DCC4
-P 8750 10275
-F 0 "U5" H 8925 10625 47  0000 R CNN
-F 1 "MAX6100" H 9125 10525 47  0000 R CNN
-F 2 "jcr-ic:SOT-23" H 8750 10275 60  0001 C CNN
-F 3 "" H 8750 10275 60  0001 C CNN
-	1    8750 10275
+P 7850 10175
+F 0 "U5" H 8025 10525 47  0000 R CNN
+F 1 "MAX6100" H 8225 10425 47  0000 R CNN
+F 2 "jcr-ic:SOT-23" H 7850 10175 60  0001 C CNN
+F 3 "" H 7850 10175 60  0001 C CNN
+	1    7850 10175
 	1    0    0    -1  
 $EndComp
 $Comp
 L wearable_cape:CONN_01x08_UNI P6
 U 1 1 5CDFA6DF
-P 8300 8600
-F 0 "P6" H 8300 8850 50  0000 C CNN
-F 1 "STATUS_BREAKOUT" H 8625 8050 50  0000 C CNN
-F 2 "jcr-conn:Molex_KK-254_1x08_P2.54mm_Vertical" H 8300 7400 50  0001 C CNN
-F 3 "" H 8300 7400 50  0000 C CNN
-	1    8300 8600
+P 9450 8450
+F 0 "P6" H 9450 8700 50  0000 C CNN
+F 1 "WRONG:STATUS_BREAKOUT" H 9775 7900 50  0000 C CNN
+F 2 "jcr-conn:Molex_KK-254_1x08_P2.54mm_Vertical" H 9450 7250 50  0001 C CNN
+F 3 "" H 9450 7250 50  0000 C CNN
+	1    9450 8450
 	1    0    0    -1  
 $EndComp
 $Comp
 L wearable_cape:CONN_01x08_UNI P7
 U 1 1 5CDFC3BA
-P 10100 8600
-F 0 "P7" H 10100 9050 50  0000 C CNN
-F 1 "A_IN_BREAKOUT" H 10100 8075 50  0000 C CNN
-F 2 "jcr-conn:Molex_KK-254_1x08_P2.54mm_Vertical" H 10100 7400 50  0001 C CNN
-F 3 "" H 10100 7400 50  0001 C CNN
-	1    10100 8600
+P 7350 8550
+F 0 "P7" H 7350 9000 50  0000 C CNN
+F 1 "A_IN_BREAKOUT" H 7350 8025 50  0000 C CNN
+F 2 "jcr-conn:Molex_KK-254_1x08_P2.54mm_Vertical" H 7350 7350 50  0001 C CNN
+F 3 "" H 7350 7350 50  0001 C CNN
+	1    7350 8550
 	1    0    0    -1  
 $EndComp
-Text GLabel 11100 7900 1    60   Input ~ 0
+Text GLabel 8350 7850 1    60   Input ~ 0
 SYS_5V
-Text Label 10500 8500 0    60   ~ 0
+Text Label 7750 8450 0    60   ~ 0
 BELA_IN0
-Text Label 10500 8600 0    60   ~ 0
+Text Label 7750 8550 0    60   ~ 0
 BELA_IN1
-Text Label 10500 8700 0    60   ~ 0
+Text Label 7750 8650 0    60   ~ 0
 BELA_IN2
-Text Label 10500 8800 0    60   ~ 0
+Text Label 7750 8750 0    60   ~ 0
 BELA_IN3
-Text Label 10500 8900 0    60   ~ 0
+Text Label 7750 8850 0    60   ~ 0
 BELA_IN4
-Text Label 10500 9000 0    60   ~ 0
+Text Label 7750 8950 0    60   ~ 0
 BELA_IN5
 $Comp
 L wearable_cape-rescue:GNDA-power #PWR0101
 U 1 1 5CEF876A
-P 10375 8100
-F 0 "#PWR0101" H 10375 7850 50  0001 C CNN
-F 1 "GNDA" H 10375 7950 50  0000 C CNN
-F 2 "" H 10375 8100 50  0000 C CNN
-F 3 "" H 10375 8100 50  0000 C CNN
-	1    10375 8100
+P 7625 8050
+F 0 "#PWR0101" H 7625 7800 50  0001 C CNN
+F 1 "GNDA" H 7625 7900 50  0000 C CNN
+F 2 "" H 7625 8050 50  0000 C CNN
+F 3 "" H 7625 8050 50  0000 C CNN
+	1    7625 8050
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -1721,69 +1721,69 @@ $EndComp
 $Comp
 L wearable_cape-rescue:GNDD-power #PWR0102
 U 1 1 5D0B8C08
-P 8600 8200
-F 0 "#PWR0102" H 8600 7950 50  0001 C CNN
-F 1 "GNDD" H 8600 8050 50  0000 C CNN
-F 2 "" H 8600 8200 50  0000 C CNN
-F 3 "" H 8600 8200 50  0000 C CNN
-	1    8600 8200
+P 9750 8050
+F 0 "#PWR0102" H 9750 7800 50  0001 C CNN
+F 1 "GNDD" H 9750 7900 50  0000 C CNN
+F 2 "" H 9750 8050 50  0000 C CNN
+F 3 "" H 9750 8050 50  0000 C CNN
+	1    9750 8050
 	-1   0    0    1   
 $EndComp
-Text Label 8650 8900 0    60   ~ 0
+Text Label 9800 8750 0    60   ~ 0
 D9
-Text Label 8650 8800 0    60   ~ 0
+Text Label 9800 8650 0    60   ~ 0
 D8
-Text Label 8650 8700 0    60   ~ 0
+Text Label 9800 8550 0    60   ~ 0
 D11
 $Comp
 L wearable_cape-rescue:C_Ceramic-jcr-device C25
 U 1 1 5CE6CE2F
-P 8150 10325
-F 0 "C25" H 8235 10371 50  0000 L CNN
-F 1 "100nF" H 8235 10280 50  0000 L CNN
-F 2 "jcr-device:C_0603_SMD_HandSolder" H 8150 10350 60  0001 C CNN
-F 3 "" H 8150 10350 60  0000 C CNN
-	1    8150 10325
+P 7250 10225
+F 0 "C25" H 7335 10271 50  0000 L CNN
+F 1 "100nF" H 7335 10180 50  0000 L CNN
+F 2 "jcr-device:C_0603_SMD_HandSolder" H 7250 10250 60  0001 C CNN
+F 3 "" H 7250 10250 60  0000 C CNN
+	1    7250 10225
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8150 10225 8150 9875
+	7250 10125 7250 9775
 Wire Wire Line
-	8150 9875 8750 9875
-Connection ~ 8750 9875
+	7250 9775 7850 9775
+Connection ~ 7850 9775
 Wire Wire Line
-	8750 9875 8750 9975
+	7850 9775 7850 9875
 Wire Wire Line
-	8150 10850 8750 10850
-Connection ~ 8750 10850
+	7250 10750 7850 10750
+Connection ~ 7850 10750
 Wire Wire Line
-	8750 10850 8750 10950
+	7850 10750 7850 10850
 $Comp
 L wearable_cape-rescue:C-jcr-device C26
 U 1 1 5CED1B55
-P 9250 10575
-F 0 "C26" H 9330 10621 50  0000 L CNN
-F 1 "1uF" H 9330 10530 50  0000 L CNN
-F 2 "jcr-device:C_1206" H 9250 10600 60  0001 C CNN
-F 3 "" H 9250 10600 60  0000 C CNN
-	1    9250 10575
+P 8350 10475
+F 0 "C26" H 8430 10521 50  0000 L CNN
+F 1 "1uF" H 8430 10430 50  0000 L CNN
+F 2 "jcr-device:C_1206" H 8350 10500 60  0001 C CNN
+F 3 "" H 8350 10500 60  0000 C CNN
+	1    8350 10475
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9050 10275 9250 10275
+	8150 10175 8350 10175
 Wire Wire Line
-	8750 10850 9250 10850
+	7850 10750 8350 10750
 Wire Wire Line
-	9250 10425 9250 10275
-Connection ~ 9250 10275
+	8350 10325 8350 10175
+Connection ~ 8350 10175
 Wire Wire Line
-	9250 10275 9575 10275
+	8350 10175 8675 10175
 Wire Wire Line
-	9250 10725 9250 10850
+	8350 10625 8350 10750
 Wire Wire Line
-	8750 10575 8750 10850
+	7850 10475 7850 10750
 Wire Wire Line
-	8150 10425 8150 10850
+	7250 10325 7250 10750
 Text Label 2725 6850 2    60   ~ 0
 I2C_SDA
 Text Label 2725 6950 2    60   ~ 0
@@ -1795,70 +1795,70 @@ Wire Wire Line
 $Comp
 L wearable_cape:CONN_01X04 P8
 U 1 1 5D1A0D25
-P 12250 8600
-F 0 "P8" H 12328 8641 50  0000 L CNN
-F 1 "CONN_01X04" H 12328 8550 50  0000 L CNN
-F 2 "jcr-conn:Molex_KK-254_1x04_P2.54mm_Vertical" H 12250 8600 50  0001 C CNN
-F 3 "" H 12250 8600 50  0000 C CNN
-	1    12250 8600
+P 10900 10550
+F 0 "P8" H 10978 10591 50  0000 L CNN
+F 1 "CONN_01X04" H 10978 10500 50  0000 L CNN
+F 2 "jcr-conn:Molex_KK-254_1x04_P2.54mm_Vertical" H 10900 10550 50  0001 C CNN
+F 3 "" H 10900 10550 50  0000 C CNN
+	1    10900 10550
 	1    0    0    -1  
 $EndComp
-Text Notes 12075 8325 0    47   ~ 0
+Text Notes 10725 10275 0    47   ~ 0
 I2C output\nidentical to the molex \noutput on the Bela
-Text GLabel 11925 8300 1    60   Input ~ 0
+Text GLabel 10575 10250 1    60   Input ~ 0
 SYS_3.3V
-Text Label 11850 8550 2    60   ~ 0
+Text Label 10500 10500 2    60   ~ 0
 I2C_SCL
-Text Label 11850 8650 2    60   ~ 0
+Text Label 10500 10600 2    60   ~ 0
 I2C_SDA
 $Comp
 L wearable_cape-rescue:GNDD-power #PWR0103
 U 1 1 5D1A2B62
-P 11925 8850
-F 0 "#PWR0103" H 11925 8600 50  0001 C CNN
-F 1 "GNDD" H 11925 8700 50  0000 C CNN
-F 2 "" H 11925 8850 50  0000 C CNN
-F 3 "" H 11925 8850 50  0000 C CNN
-	1    11925 8850
+P 10575 10800
+F 0 "#PWR0103" H 10575 10550 50  0001 C CNN
+F 1 "GNDD" H 10575 10650 50  0000 C CNN
+F 2 "" H 10575 10800 50  0000 C CNN
+F 3 "" H 10575 10800 50  0000 C CNN
+	1    10575 10800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12050 8750 11925 8750
+	10700 10700 10575 10700
 Wire Wire Line
-	11925 8750 11925 8850
+	10575 10700 10575 10800
 Wire Wire Line
-	11850 8650 12050 8650
+	10500 10600 10700 10600
 Wire Wire Line
-	11850 8550 12050 8550
+	10500 10500 10700 10500
 Wire Wire Line
-	11925 8300 11925 8450
+	10575 10250 10575 10400
 Wire Wire Line
-	11925 8450 12050 8450
-Text Label 8650 8500 0    60   ~ 0
+	10575 10400 10700 10400
+Text Label 9800 8350 0    60   ~ 0
 MODE_SEL_1
-Text Label 8650 8600 0    60   ~ 0
+Text Label 9800 8450 0    60   ~ 0
 MODE_SEL_2
-Text Label 14200 9225 3    60   ~ 0
+Text Label 14350 9225 3    60   ~ 0
 MODE_SEL_1
-Text Label 15000 9225 3    60   ~ 0
+Text Label 15150 9225 3    60   ~ 0
 MODE_SEL_2
 Wire Wire Line
-	14200 9225 14200 8850
-Connection ~ 14200 8850
+	14350 9225 14350 8850
+Connection ~ 14350 8850
 Wire Wire Line
-	14200 8850 14300 8850
+	14350 8850 14450 8850
 Wire Wire Line
-	15000 9225 15000 8850
+	15150 9225 15150 8850
 Wire Wire Line
-	15000 8850 14900 8850
+	15150 8850 15050 8850
 Wire Wire Line
-	15000 8850 15275 8850
-Connection ~ 15000 8850
-Text Label 8650 9000 0    60   ~ 0
+	15150 8850 15425 8850
+Connection ~ 15150 8850
+Text Label 9800 8850 0    60   ~ 0
 STATUS_LED
-Text Label 8650 8400 0    60   ~ 0
+Text Label 9800 8250 0    60   ~ 0
 ~SW_HALT
-Text Notes 10050 7550 0    47   ~ 0
+Text Notes 7200 7800 0    47   ~ 0
 NOTE: SYS3v3 is much quieter than 5V\nadd a LDO regulator on daughter boards for clean\npower from 5V
 Wire Wire Line
 	5050 9375 5050 9475
@@ -1939,27 +1939,27 @@ NoConn ~ 3075 8850
 NoConn ~ 2875 6250
 NoConn ~ 2875 6350
 NoConn ~ 2875 6450
-Text Label 13750 7725 2    60   ~ 0
+Text Label 14950 7575 2    60   ~ 0
 ~SW_HALT
 Wire Wire Line
-	13750 7725 14000 7725
-Connection ~ 14000 7725
-Text Label 7875 8600 3    60   ~ 0
+	14950 7575 15200 7575
+Connection ~ 15200 7575
+Text Label 9025 8450 3    60   ~ 0
 STATUS_LED
 $Comp
 L wearable_cape-rescue:CONN_1-conn P9
 U 1 1 5DA465F0
-P 7875 8275
-F 0 "P9" H 7933 8275 40  0000 L CNN
-F 1 "CONN_1" H 7825 8315 30  0001 C CNN
-F 2 "jcr-conn:PinHeader_1x01_P2.54mm_Vertical" H 7875 8275 60  0001 C CNN
-F 3 "" H 7875 8275 60  0001 C CNN
-	1    7875 8275
+P 9025 8125
+F 0 "P9" H 9083 8125 40  0000 L CNN
+F 1 "CONN_1" H 8975 8165 30  0001 C CNN
+F 2 "jcr-conn:PinHeader_1x01_P2.54mm_Vertical" H 9025 8125 60  0001 C CNN
+F 3 "" H 9025 8125 60  0001 C CNN
+	1    9025 8125
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7875 8425 7875 8600
-Text Notes 8000 9350 1    35   ~ 0
+	9025 8275 9025 8450
+Text Notes 9150 9200 1    35   ~ 0
 NOTE: hand-solder to the BBB status led
 NoConn ~ 1475 4225
 Wire Wire Line
@@ -2109,73 +2109,73 @@ Wire Wire Line
 $Comp
 L wearable_cape-rescue:GND-power #PWR0106
 U 1 1 5D6B57A9
-P 8750 10950
-F 0 "#PWR0106" H 8750 10700 50  0001 C CNN
-F 1 "GND" H 8750 10800 50  0000 C CNN
-F 2 "" H 8750 10950 50  0000 C CNN
-F 3 "" H 8750 10950 50  0000 C CNN
-	1    8750 10950
+P 7850 10850
+F 0 "#PWR0106" H 7850 10600 50  0001 C CNN
+F 1 "GND" H 7850 10700 50  0000 C CNN
+F 2 "" H 7850 10850 50  0000 C CNN
+F 3 "" H 7850 10850 50  0000 C CNN
+	1    7850 10850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10300 8500 10500 8500
+	7550 8450 7750 8450
 Wire Wire Line
-	10500 8600 10300 8600
+	7750 8550 7550 8550
 Wire Wire Line
-	10300 8700 10500 8700
+	7550 8650 7750 8650
 Wire Wire Line
-	10300 8800 10500 8800
+	7550 8750 7750 8750
 Wire Wire Line
-	10300 8900 10500 8900
+	7550 8850 7750 8850
 Wire Wire Line
-	10300 9000 10500 9000
+	7550 8950 7750 8950
 Wire Wire Line
-	10375 8100 10375 8300
+	7625 8050 7625 8250
 Wire Wire Line
-	10375 8300 10300 8300
+	7625 8250 7550 8250
 Wire Wire Line
-	10550 8100 10550 8400
+	7800 8050 7800 8350
 Wire Wire Line
-	10550 8400 10300 8400
+	7800 8350 7550 8350
 Wire Wire Line
-	8600 8200 8600 8300
+	9750 8050 9750 8150
 Wire Wire Line
-	8600 8300 8500 8300
+	9750 8150 9650 8150
 Wire Wire Line
-	8500 8400 8650 8400
+	9650 8250 9800 8250
 Wire Wire Line
-	8650 8500 8500 8500
+	9800 8350 9650 8350
 Wire Wire Line
-	8500 8600 8650 8600
+	9650 8450 9800 8450
 Wire Wire Line
-	8500 8700 8650 8700
+	9650 8550 9800 8550
 Wire Wire Line
-	8500 8800 8650 8800
+	9650 8650 9800 8650
 Wire Wire Line
-	8500 8900 8650 8900
+	9650 8750 9800 8750
 Wire Wire Line
-	8500 9000 8650 9000
+	9650 8850 9800 8850
 Text Notes 5325 8275 0    47   ~ 0
 NOTE: Bela Digital Pins are 3.3V tolerant!!\nYou must level shift the serial signal coming\nback to the Bela down to 3.3V!
 Text Notes 2975 5300 0    39   ~ 0
 NOTE: SYS_5V supply on the BeagleBone Black is the regulated \nsupply coming from the USB port. It will always be available \nregardless of how the BeagleBone is powered, but it has a limit \nof 250mA of current.
 Text Notes 3900 5700 0    39   ~ 0
 NOTE: VDD_5V supply on the BeagleBone Black is only available \nwhen  powered from the DC barrel connector (or other external \nsource). Given a suitable power supply, these pins can supply \nup to 1A of current. These are the pins used to power the audio \namplifiers on the Bela cape.
-Text GLabel 11100 8300 3    60   Input ~ 0
+Text GLabel 8350 8250 3    60   Input ~ 0
 SYS_3.3V
 $Comp
 L wearable_cape-rescue:SolderJumper_3_Open-jcr-device JP2
 U 1 1 5D9EB81E
-P 11100 8100
-F 0 "JP2" V 11000 7925 50  0000 L CNN
-F 1 "analog power select" H 10725 8225 39  0000 L CNN
-F 2 "jcr-device:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 11100 8100 50  0001 C CNN
-F 3 "~" H 11100 8100 50  0001 C CNN
-	1    11100 8100
+P 8350 8050
+F 0 "JP2" V 8250 7875 50  0000 L CNN
+F 1 "analog power select" H 7975 8175 39  0000 L CNN
+F 2 "jcr-device:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 8350 8050 50  0001 C CNN
+F 3 "~" H 8350 8050 50  0001 C CNN
+	1    8350 8050
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10550 8100 10950 8100
+	7800 8050 8200 8050
 $Comp
 L wearable_cape-rescue:SolderJumper_3_Open-jcr-device JP1
 U 1 1 5DA2E23D
@@ -2189,4 +2189,154 @@ F 3 "~" H 5050 8450 50  0001 C CNN
 $EndComp
 Text GLabel 5050 8650 3    60   Input ~ 0
 SYS_3.3V
+Text Notes 700  8350 0    60   ~ 0
+How can these labels possibly be correct? D0 and SYS5v?
+Text Notes 9450 9250 0    60   ~ 0
+WARNING: This is not how the status breakout \nis wired on the actual V2 boards!
+Text Notes 13500 8650 0    60   ~ 0
+These buttons are incorrectly labeled on the v2 boards
+$Comp
+L wearable_cape:CONN_02X04_UNI P?
+U 1 1 5F5B5590
+P 11600 8300
+F 0 "P?" V 11646 8062 50  0000 R CNN
+F 1 "CONN_02X04_UNI" V 11555 8062 50  0000 R CNN
+F 2 "" H 11600 7100 50  0000 C CNN
+F 3 "" H 11600 7100 50  0000 C CNN
+	1    11600 8300
+	0    -1   -1   0   
+$EndComp
+Text Notes 11400 9850 0    60   ~ 0
+NEW BREAKOUTBOARD CONNECTOR & BREAKOUT
+$Comp
+L JCR_DEVICE:RGB_LED D?
+U 1 1 5F5B84C2
+P 12800 9300
+F 0 "D?" H 12800 9751 39  0000 C CNN
+F 1 "RGB_LED" H 12800 9676 39  0000 C CNN
+F 2 "" H 12800 9400 50  0000 C CNN
+F 3 "" H 12800 9400 50  0000 C CNN
+	1    12800 9300
+	1    0    0    -1  
+$EndComp
+$Comp
+L JCR_DEVICE:R_Small R?
+U 1 1 5F5BD54F
+P 12300 9250
+F 0 "R?" V 12104 9250 50  0000 C CNN
+F 1 "47" V 12195 9250 50  0000 C CNN
+F 2 "" H 12300 9250 50  0001 C CNN
+F 3 "~" H 12300 9250 50  0001 C CNN
+	1    12300 9250
+	0    1    1    0   
+$EndComp
+$Comp
+L jcr-misc:GND #PWR?
+U 1 1 5F600B6C
+P 12100 9300
+F 0 "#PWR?" H 12100 9050 50  0001 C CNN
+F 1 "GND" H 12105 9127 50  0000 C CNN
+F 2 "" H 12100 9300 50  0001 C CNN
+F 3 "" H 12100 9300 50  0001 C CNN
+	1    12100 9300
+	1    0    0    -1  
+$EndComp
+Text Label 11350 8700 2    60   ~ 0
+RED_LED
+Wire Wire Line
+	11350 8700 11450 8700
+Wire Wire Line
+	11450 8700 11450 8550
+Wire Wire Line
+	11350 9000 11550 9000
+Wire Wire Line
+	11550 9000 11550 8550
+$Comp
+L jcr-misc:GND #PWR?
+U 1 1 5F6B21B3
+P 12150 8650
+F 0 "#PWR?" H 12150 8400 50  0001 C CNN
+F 1 "GND" V 12155 8522 50  0000 R CNN
+F 2 "" H 12150 8650 50  0001 C CNN
+F 3 "" H 12150 8650 50  0001 C CNN
+	1    12150 8650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12150 8650 11750 8650
+Wire Wire Line
+	11750 8650 11750 8550
+Wire Wire Line
+	11100 8050 11450 8050
+Text Label 11750 9000 0    60   ~ 0
+BLUE_LED
+Wire Wire Line
+	11750 9000 11650 9000
+Wire Wire Line
+	11650 9000 11650 8550
+Text Label 11350 9000 2    60   ~ 0
+GREEN_LED
+Text Label 11100 8050 2    60   ~ 0
+MODE_SEL1_3v3
+Text Label 11200 7900 2    60   ~ 0
+MODE_SEL2
+Wire Wire Line
+	11200 7900 11550 7900
+Wire Wire Line
+	11550 7900 11550 8050
+Text Label 11650 7850 0    60   ~ 0
+SW_HALT
+Wire Wire Line
+	11650 7850 11650 8050
+Text Label 11900 8000 0    60   ~ 0
+STATUS_LED
+Wire Wire Line
+	11900 8000 11750 8000
+Wire Wire Line
+	11750 8000 11750 8050
+Text Label 13300 9100 0    60   ~ 0
+RED_LED
+Wire Wire Line
+	13300 9100 13100 9100
+Text Label 13300 9300 0    60   ~ 0
+GREEN_LED
+Wire Wire Line
+	13300 9300 13100 9300
+Text Label 13300 9500 0    60   ~ 0
+BLUE_LED
+Wire Wire Line
+	13300 9500 13100 9500
+$Comp
+L JCR_DEVICE:LED D?
+U 1 1 5F98412C
+P 13750 8150
+F 0 "D?" H 13750 8365 50  0000 C CNN
+F 1 "2mA GRN LED" H 13750 8274 50  0000 C CNN
+F 2 "" H 13750 8150 50  0000 C CNN
+F 3 "" H 13750 8150 50  0000 C CNN
+	1    13750 8150
+	1    0    0    -1  
+$EndComp
+Text Label 14150 8150 0    60   ~ 0
+STATUS_LED
+Wire Wire Line
+	14150 8150 13950 8150
+Text Label 13400 8150 2    60   ~ 0
+3v3
+Wire Wire Line
+	13400 8150 13550 8150
+Text Notes 9250 7800 0    60   ~ 0
+\nThe actual wiring of the status header on the v2 board is...\n\n1 GND\n2 STATUS_LED\n3 D11\n4 SW_HALT\n5 D8\n6 MODE_SEL1 / 3v3\n7 D9\n8 MODE_SEL2
+Wire Wire Line
+	12400 9250 12500 9250
+Wire Wire Line
+	12100 9300 12100 9250
+Wire Wire Line
+	12100 9250 12200 9250
+Wire Wire Line
+	10300 7550 10150 7550
+Wire Wire Line
+	10150 7550 10150 7700
+Wire Wire Line
+	10150 7700 10200 7700
 $EndSCHEMATC

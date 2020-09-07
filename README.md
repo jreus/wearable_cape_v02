@@ -10,18 +10,37 @@ Second version of a wearable sensing/actuating cape for the Augmented Attention 
 - widen power rail traces from battery to 11.1V source to amplifiers
 
 # 23 MAY 2019 ~ WARNING! First Boards Ordered from Eurocircuits have wiring mistakes!
+There was a serious wiring error in these boards, where the 10-pin row of headers that
+connect downward into the Bela's analog inputs row and analog outputs row are reversed!
+These headers do not correctly match up to the pins on the Bela and thus need to be
+sliced and re-routed on the capelet board.
 
-_IMPORTANT_
-There was a wiring error in these boards, where the 10-pin analog inputs
-and analog outputs headers on the capelet do not match the pins of the Bela.
+The pin ordering is flipped. So for example, on the Bela, the ground header for analog inputs is
+on the bottom. But on the capelet it's at the top.
 
-The pin ordering is flipped. On the Bela A-INS ground is at the bottom,
-on the wearable capelet it's at the top.
-
-On the Bela A-OUTS ground is on the right, on the capelet it's on the
+Likewise, on the Bela the analog outputs ground is on the right, on the capelet it's on the
 left.
 
-Temporary Solution: make a little pin header wire connector with the wiring reversed
+Possible Solutions (other than making new boards!):
+
+1. Make a pin header/wire adapter that reverses the connections
+2. Cut n rewire the capelet
+
+See images/REV2.1_wiring_mistake for more info on the wiring issue...
+
+## More errors
+The mode select and halt switches are misnamed on the board, and potentially miswired to the breakout board header.
+
+The actual wiring of the status header on the v2 board is...
+
+1 ~ GND
+2 ~ STATUS_LED
+3 ~ D11
+4 ~ SW_HALT
+5 ~ D8
+6 ~ MODE_SEL1 / 3v3
+7 ~ D9
+8 ~ MODE_SEL2
 
 
 
